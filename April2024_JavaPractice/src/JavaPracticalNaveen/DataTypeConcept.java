@@ -1,6 +1,7 @@
 package JavaPracticalNaveen;
 
 public class DataTypeConcept {
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -13,6 +14,7 @@ public class DataTypeConcept {
 		
 		System.out.println(b);//30
 		System.out.println(c);//20
+		System.out.println(h);//-90
 		short s=234;
 		System.out.println(s);//234
 		short s1=1;
@@ -29,13 +31,15 @@ public class DataTypeConcept {
 		
 		
 		float f1=12.33f;
-		System.out.println(f1);
+		System.out.println(f1);//12.3
 		float f2=(float)34.44;
 		float f3=100;
-		System.out.println(f3);
+		System.out.println(f3);//100.0
 		
 		double d=12.33;
 		double d1=1.1;
+		System.out.println(d);//12.33
+		System.out.println(d1);//1.1
 		
 		char c1='a';
 		System.out.println(c1);//a
@@ -43,16 +47,19 @@ public class DataTypeConcept {
 		char c3='H';
 		char c4='%';
 		char c5='1';
-		System.out.println(c5);
+		System.out.println(c5);//1
 		
-		boolean flag=true;
-		System.out.println(flag);
-		boolean test=false;
+		//boolean flag=true;
+		//boolean flag;
+		//System.out.println(flag);
+		//boolean test=false;
 		
 		System.out.println(100);//100
 		
 		int pop=100;
 		System.out.println(pop);//100
+		
+		
 	}
 
 }
