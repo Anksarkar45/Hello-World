@@ -10,7 +10,7 @@ public class ArraysConcept {
 		//limitations of array
 		//1.fixed size
 		
-		int a[]=new int[4];
+		int a[]=new int[4];//16 bytes
 		a[0]=10;
 		a[1]=20;
 		a[2]=30;

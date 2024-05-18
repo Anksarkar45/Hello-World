@@ -45,7 +45,7 @@ public class User {
       
       //----------------------------------------------
       //Reassigning values between u1, u2, u3
-      System.out.println(u1.name+" "+u1.age+" "+u1.city);//Riya 30 Pune
+      System.out.println(u1.name+"  "+u1.age+" "+u1.city);//Riya 30 Pune
       System.out.println(u2.name+" "+u2.age+" "+u2.city);//Abhi 35 LA
       System.out.println(u3.name+" "+u3.age+" "+u3.city);//Geeta 20 Bangalore
       
@@ -70,15 +70,21 @@ public class User {
 
 }
 
+/*
+Assignment
+u1 u2 u3 u4
+
+u1=u2
+u2=u3
+u3=u4
+u4=u5
+
+*/
 
 
 
-
-
-
-
-
-
+//improve communication
+//feel good of self--- however i am
 
 
 
