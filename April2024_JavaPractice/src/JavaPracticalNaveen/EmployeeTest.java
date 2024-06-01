@@ -25,10 +25,14 @@ public class EmployeeTest
 
 	public static void main(String[] args) {
 
-		EmployeeTest t1=new EmployeeTest();
-		t1.add(20,30);
+		EmployeeTest obj=new EmployeeTest();
+		obj.add(20,30);//calling method by giving value( arguement)
+		obj.getEmpInfo(obj);//calling method by passing its reference variable
 		
-		t1.getEmpInfo(t1);
+		EmployeeTest t1=new EmployeeTest();
+		t1.add(20,30);//calling method by value
+		
+		t1.getEmpInfo(t1);//calling method by reference
 		
 		System.out.println(t1.name);
 		System.out.println(t1.age);
