@@ -13,5 +13,6 @@ public class Cycle {
 	a.milg//private not allowed
 	a.brand;//default not allowed
 	}
-
+ 
+	
 }

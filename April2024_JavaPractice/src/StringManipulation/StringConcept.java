@@ -7,7 +7,7 @@ public class StringConcept {
     
 	//String is a Class in java
 	
-	//1.Creating String objects using literals	
+	//1.Creating String objects using literals(String literals)
 	String s="Hello";
     String s1="Hello";
     String s2="hello";
@@ -29,6 +29,7 @@ public class StringConcept {
 	*/
 	
 
+	//Creating string object with new keyword 
 	String st2=new String("Hello");
 	
 	//-------------------------------------------------------
