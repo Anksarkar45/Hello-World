@@ -25,7 +25,32 @@ public class BMW extends Car{
 	{
 		System.out.println("BMW-- petrol engine");
 	}
+	
+	
+	/*-----------------------------------------------------------
+	//Overriding of final method is NOT allowed in java
+	@Override
+	public final void service()
+	{
+		System.out.println("BMW service");
+	}
+    -----------------------------------------------------------
 
+	//overrding of static method is NOT allowed in java
+	@Override
+   public static void billing()
+   {
+	   System.out.println("BMW-- billing");
+   }
+	
+	Note: If we remove@Override annotation then it becomes individual static method of BMW, which is allowed in java
+	Eg: service() written below 
+	-----------------------------------------------------------------------------------------------------------------
+	*/
+	
+
+	
+	
 	//UniqueIndividual method of BMW
 	//@Override--  error because, we cannot override individual methods of child class
 	public void autoParking()	
@@ -34,14 +59,32 @@ public class BMW extends Car{
 		
 	}
 	
-	//Individual method of BMW-- but same method is there in sibling
+	//Individual(non overriden, non static) method of BMW-- but same method is there in sibling
 	public void theftSafety()
 	{
 		System.out.println("BMW----theftSafety");
 	}
 	
+	// individual(non-overriden, static method) of BMW-- but same method name is there in parent class
 	
+	public static void billing()
+	{
+		System.out.println("BMW-- billing");
+	}
 	
+	/*overriding of private methods is not allowed in java
+	@Override
+	private void pickcolor()
+	{
+		System.out.println("BMW-- pickcolor");
+	}
+	*/
+	
+	//Individual private method of child class --- same name method in parent class 
+	private void pickcolor()
+	{
+		System.out.println("BMW-- pickcolor");
+	}
 }
 
 /*
@@ -75,4 +118,35 @@ Note:
 If method is not overriden inside child class, then that method becomes either individual method of child class or inherited method of child class
 MULTI-LEVEL INHERITNCE isallowed in java via classes(Leve1 , level 2, level 3)
 MULTIPLE INHERITANCE IS NOT ALLOWED IN JAVA via classes, it gives DIAMON PROBLEM(one child class cannot have multiple parent class)  
+
+Note:
+--Static methods---(Also called:METHOD HIDING CONCEPT)
+Static methods cannot be overriden- in parent child classes
+We can have separate individual static methods(with same name) in parent and child classes
+
+Note:
+static methods can be overloaded - withing same class 
+final methods can be overloaded-- within same same
+private methods can be overloaded-- within same same
+Eg:Refer: static main method 
+
+Note:
+--Final method---
+final methods cannot be overriden inside child class from parent class
+We can have separate individual final methods(with same name) in parent class and child class
+
+Note:
+--private method---
+private methods cannot be overriden inside child class from parent class
+We can have separate individual private methods(with same name) in parent class and child class
+
+Note:Multi-Level inheritance
+(level 1 , level2 , level 3....)
+Multi-level inheritance is possible in java via classes
+Multi-level inheritance is possible in java via interface-- but not recomended because interface no business logic can be written
+
+Note: Multiple Inheritance
+Multiple Inheritance is not possible in java via classes(once child class cannot have multiple parent class)-- it leads to Diamon problem
+Multiple Inheritance is possible in java via interfaces(one child interface, can have multiple parent interfaces)
+To Overcome Diamod problem, we use Interfaces, instead of classes
 */

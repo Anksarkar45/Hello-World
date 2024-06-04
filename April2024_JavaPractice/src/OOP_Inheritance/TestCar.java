@@ -34,6 +34,17 @@ public class TestCar {
 		
 		b.autoParking();
 		
+		//inherited method of BMW
+		b.service(); //Car Service
+		
+		//Case1 //Static method of BMW
+		b.billing();//BMW bILLING
+		
+		
+		//case 2//Static method of BMW-- unique case
+		b.billing();//Car billing
+		//NOTE(unique calling case): IF BMW is not having static billing(),then while acessing billing() using bmw object, it will inherit static billing() of parent class  
+		//Note: Reverse not true, parent cannot acess billing
 		System.out.println("---Parent :Car object properties---");
 		
 	
@@ -64,6 +75,13 @@ public class TestCar {
 	    
 	    //Inherited method of Car class-- from its parent (Vehicle)
 	    c.petrolEngine(); //Vehicle--petrol engine
+	    
+	    //------Static calling----------
+	    //Case1: calling static method of Car
+	    //c.billing();//Car-billing
+	    
+	    //case2: calling static method -- from BMW
+	    //c.billing();//Error: method billing is undefined for the typr car
 	    
 	    System.out.println("---------------Sibling2: Audi object properties---");
 	    Audi a=new Audi();
