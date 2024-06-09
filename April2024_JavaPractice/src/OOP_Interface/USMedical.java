@@ -19,7 +19,8 @@ public interface USMedical extends WHO {
     public void emergencyService();
 
     //overriding method from parent WHO-- but no use, this method has to be implemented inside child-class and not in any interface
-   public void covidVaccinationCamp();
+   @Override
+    public void covidVaccinationCamp();
    
    //----------------------------------------------------------------------------------
    /*
